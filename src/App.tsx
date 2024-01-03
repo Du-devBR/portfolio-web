@@ -1,12 +1,10 @@
-import { Button } from "./components/ui/button";
+import { ThemeProvider } from "./components/theme/theme-provider";
+import { Home } from "./pages/home";
 
 export function App() {
   return (
-    <>
-      <h1 className="text-zinc-800">Hello word eduardo</h1>
-      <Button>Apertar</Button>
-    </>
+    <ThemeProvider defaultTheme="dark">
+      <Home />
+    </ThemeProvider>
   );
 }
-
-export default App;
