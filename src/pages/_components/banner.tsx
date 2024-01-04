@@ -1,9 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { technologyIcons } from "./constants/technology-icon-data";
+import banner from "@/assets/banner.png";
 
 export function Banner() {
   return (
-    <main className="flex gap-16 mt-40 max-md:mt-24 max-md:flex-col">
+    <main className="flex gap-16 items-center mt-40 max-md:mt-24 max-md:flex-col">
       <div className="text-foreground max-w-[591px] flex flex-col gap-6">
         <span className="text-3xl max-sm:text-2xl">Ola, seja bem vindo!</span>
         <h1 className="text-5xl max-sm:text-3xl">
@@ -31,7 +32,13 @@ export function Banner() {
           <Button type="button">Baixar Curriculo</Button>
         </div>
       </div>
-      <div className="w-full h-2 bg-red-300"></div>
+      <div className="flex items-center bg-primary rounded-full overflow-hidden pt-6 rotate-45  max-lg:rounded-3xl max-lg:rotate-0">
+        <img
+          className="object-contain transform -rotate-45 max-lg:-rotate-0 max-lg:max-w-64"
+          src={banner}
+          alt=""
+        />
+      </div>
     </main>
   );
 }
