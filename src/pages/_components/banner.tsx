@@ -1,6 +1,8 @@
+import { technologyIcons } from "./constants/technology-icon-data";
+
 export function Banner() {
   return (
-    <main className="flex gap-16 mt-40">
+    <main className="flex gap-16 mt-40 max-md:flex-col">
       <div className="text-foreground max-w-[591px] flex flex-col gap-6">
         <span className="text-3xl">Ola, seja bem vindo!</span>
         <h1 className="text-5xl">
@@ -11,7 +13,13 @@ export function Banner() {
           Engenheiro Apaixonado por Desenvolvimento de Software, utilizando
           Tecnologias Inovadoras para Construir Aplicações com Qualidade.
         </p>
-        <div></div>
+        <div className="flex gap-4 w-full overflow-hidden ">
+          {technologyIcons.map((item, index) => (
+            <div className="text-3xl bg-zinc-600 contents" key={index}>
+              {item.technology}
+            </div>
+          ))}
+        </div>
       </div>
       <div className="w-full h-2 bg-red-300"></div>
     </main>
