@@ -18,36 +18,36 @@ export function Projects() {
         industry.
       </p>
       <Carousel
-        className="w-full "
+        className="w-full"
         opts={{
           align: "start",
           loop: true,
         }}
       >
         <CarouselContent className="">
-          <CarouselItem className="basis-1/3 max-md:basis-1/2 max-sm:basis-4/5">
-            <div className="relative py-10">
+          <CarouselItem className="basis-1/3 max-md:basis-1/2 max-sm:basis-full">
+            <div className="relative pt-10 pb-6">
               <CardProjects />
             </div>
           </CarouselItem>
-          <CarouselItem className="basis-1/3 max-md:basis-1/2 max-sm:basis-4/5">
-            <div className="relative py-10">
+          <CarouselItem className="basis-1/3 max-md:basis-1/2 max-sm:basis-full">
+            <div className="relative pt-10 pb-6">
               <CardProjects />
             </div>
           </CarouselItem>
-          <CarouselItem className="basis-1/3 max-md:basis-1/2 max-sm:basis-4/5">
-            <div className="relative py-10">
+          <CarouselItem className="basis-1/3 max-md:basis-1/2 max-sm:basis-full">
+            <div className="relative pt-10 pb-6">
               <CardProjects />
             </div>
           </CarouselItem>
-          <CarouselItem className="basis-1/3 max-md:basis-1/2 max-sm:basis-4/5">
-            <div className="relative py-10">
+          <CarouselItem className="basis-1/3 max-md:basis-1/2 max-sm:basis-full">
+            <div className="relative pt-10 pb-6">
               <CardProjects />
             </div>
           </CarouselItem>
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
+        <CarouselPrevious className="left-[44%] max-md:left-[38%] top-auto  " />
+        <CarouselNext className="right-[44%] max-md:right-[38%] top-auto " />
       </Carousel>
     </section>
   );

@@ -32,7 +32,7 @@ export function Banner() {
           <Button type="button">Baixar Curriculo</Button>
         </div>
       </div>
-      <div className="flex items-center bg-primary rounded-full overflow-hidden pt-6 rotate-45  max-lg:rounded-3xl max-lg:rotate-0">
+      <div className="flex items-center bg-primary rounded-full overflow-hidden pt-6 max-lg:rounded-3xl max-lg:rotate-0">
         <img
           className="object-contain transform -rotate-45 max-lg:-rotate-0 max-lg:max-w-64"
           src={banner}
