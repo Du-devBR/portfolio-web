@@ -1,6 +1,7 @@
 import { GridContainer } from "../components/grid-container";
 import { About } from "./_components/about";
 import { Banner } from "./_components/banner";
+import { Contact } from "./_components/contact";
 import { Header } from "./_components/header";
 import { Projects } from "./_components/projects";
 import { Skills } from "./_components/skills";
@@ -13,6 +14,7 @@ export function Home() {
       <About />
       <Skills />
       <Projects />
+      <Contact />
     </GridContainer>
   );
 }

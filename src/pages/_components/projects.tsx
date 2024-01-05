@@ -6,6 +6,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { projectData } from "./constants/projects-data";
 
 export function Projects() {
   return (
@@ -25,26 +26,16 @@ export function Projects() {
         }}
       >
         <CarouselContent className="">
-          <CarouselItem className="basis-1/3 max-md:basis-1/2 max-sm:basis-full">
-            <div className="relative pt-10 pb-6">
-              <CardProjects />
-            </div>
-          </CarouselItem>
-          <CarouselItem className="basis-1/3 max-md:basis-1/2 max-sm:basis-full">
-            <div className="relative pt-10 pb-6">
-              <CardProjects />
-            </div>
-          </CarouselItem>
-          <CarouselItem className="basis-1/3 max-md:basis-1/2 max-sm:basis-full">
-            <div className="relative pt-10 pb-6">
-              <CardProjects />
-            </div>
-          </CarouselItem>
-          <CarouselItem className="basis-1/3 max-md:basis-1/2 max-sm:basis-full">
-            <div className="relative pt-10 pb-6">
-              <CardProjects />
-            </div>
-          </CarouselItem>
+          {projectData.map((item) => (
+            <CarouselItem
+              key={item.id}
+              className="basis-1/3 max-md:basis-1/2 max-sm:basis-full"
+            >
+              <div className="relative pt-10 pb-6">
+                <CardProjects data={item} />
+              </div>
+            </CarouselItem>
+          ))}
         </CarouselContent>
         <CarouselPrevious className="left-[44%] max-md:left-[38%] top-auto  " />
         <CarouselNext className="right-[44%] max-md:right-[38%] top-auto " />

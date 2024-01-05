@@ -9,10 +9,10 @@ import {
 import { SiJavascript, SiTailwindcss } from "react-icons/si";
 
 export interface TechnologisTypes {
-  name: string;
-  technology: JSX.Element;
-  description: string;
-  link: string;
+  name?: string;
+  technology?: JSX.Element;
+  description?: string;
+  link?: string;
 }
 
 export const technologyIcons: TechnologisTypes[] = [

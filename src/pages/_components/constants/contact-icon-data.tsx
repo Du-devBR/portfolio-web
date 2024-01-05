@@ -10,7 +10,7 @@ export const contactIconData: ContactIconTypes[] = [
   {
     name: "email",
     icon: <Mail />,
-    href: "eduardo.ananias2@hotmail.com",
+    href: "mailto:eduardo.ananias2@hotmail.com",
   },
   {
     name: "github",

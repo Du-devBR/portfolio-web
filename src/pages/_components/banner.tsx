@@ -37,6 +37,7 @@ export function Banner() {
           className="object-contain transform -rotate-45 max-lg:-rotate-0 max-lg:max-w-64"
           src={banner}
           alt=""
+          loading="lazy"
         />
       </div>
     </main>
