@@ -1,43 +1,45 @@
-import picture from "@/assets/igniteShop.png";
-import { SiNextdotjs, SiTailwindcss } from "react-icons/si";
 import { Button } from "./ui/button";
 import { Github, Globe } from "lucide-react";
-import { useState } from "react";
+import { ProjectsDataTypes } from "@/pages/_components/constants/projects-data";
 
-export function CardProjects() {
-  const [openModalButtons, setOpenModalButtons] = useState(false);
+interface CardProjectsProps {
+  data: ProjectsDataTypes;
+}
 
-  console.log(openModalButtons);
-
+export function CardProjects({ data }: CardProjectsProps) {
   return (
     <div
-      className="max-w-96 flex flex-col gap-4 p-2 pb-4 rounded-md bg-primary-foreground border-solid
-      border-foreground border-[1px] hover:border-primary transition-transform
-      transform origin-center duration-700 cursor-pointer relative  hover:shadow-2xl hover:shadow-primary"
-      onMouseEnter={() => setOpenModalButtons(true)}
-      onMouseLeave={() => setOpenModalButtons(false)}
+      className="max-w-96 flex flex-col gap-4 p-2  rounded-md bg-primary-foreground border-solid
+      border-foreground border-[1px] hover:border-primary duration-700 cursor-pointer relative  hover:shadow-2xl hover:shadow-primary"
     >
-      <img className="object-cover rounded-md" src={picture} alt="" />
-      <h4 className="text-lg">Ignite Shop</h4>
+      <img
+        className="object-cover rounded-md min-h-[268px]"
+        src={data.cover_image}
+        alt=""
+      />
+      <h4 className="text-lg">{data.name}</h4>
       <div className="flex gap-2">
-        <SiNextdotjs />
-        <SiTailwindcss />
+        {data.lenguages.map((lenguage, index) => (
+          <div key={index}>{lenguage}</div>
+        ))}
       </div>
-      <div
-        className={`gap-3 flex justify-between flex-wrap w-full transition-all  ${
-          openModalButtons
-            ? " h-24 opacity-100 duration-700"
-            : " h-0 opacity-0 duration-300"
-        }`}
-      >
+      <div className={`gap-3 flex justify-between flex-wrap w-full}`}>
         <Button className="bg-zinc-50 w-full  text-zinc-900 border-zinc-900 border-solid border-2 duration-500 transition-all hover:bg-zinc-200 hover:shadow-xl hover:shadow-primary dark:bg-zinc-800 dark:border-zinc-50  dark:text-zinc-50  dark:hover:bg-zinc-900">
-          <a href="" className="flex items-center">
+          <a
+            target="_blanck"
+            href={data.github_repo}
+            className="flex items-center"
+          >
             <Github />
             Acessar Github
           </a>
         </Button>
         <Button className="w-full hover:shadow-lg hover:shadow-foreground transition-all duration-500">
-          <a href="" className="flex items-center">
+          <a
+            target="_blanck"
+            href={data.homepage}
+            className="flex items-center"
+          >
             <Globe />
             Acessar site
           </a>
