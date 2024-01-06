@@ -66,10 +66,15 @@ module.exports = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        "copy": {
+          from: {width: "0",},
+          to: {width: "65"}
+        }
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "copy": "copy 0.6s ease-in-out"
       },
     },
   },
