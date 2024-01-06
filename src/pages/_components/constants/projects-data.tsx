@@ -47,7 +47,7 @@ export const projectData: ProjectsDataTypes[] = [
   // alterar abaixo
 
   {
-    id: "1",
+    id: "3",
     cover_image: dailydiet,
     name: "Daily diet Web",
     lenguages: [
@@ -62,7 +62,7 @@ export const projectData: ProjectsDataTypes[] = [
     homepage: "https://daily-diet-web.vercel.app/",
   },
   {
-    id: "2",
+    id: "4",
     cover_image: myFreela,
     name: "Meu Freela",
     lenguages: [<FaHtml5 />, <FaCss3 />, <SiJavascript />, <FaGithub />],

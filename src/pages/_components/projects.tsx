@@ -19,10 +19,9 @@ export function Projects() {
         industry.
       </p>
       <Carousel
-        className="w-full"
+        className="w-full "
         opts={{
           align: "start",
-          loop: true,
         }}
       >
         <CarouselContent className="">
@@ -37,8 +36,8 @@ export function Projects() {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className="left-[44%] max-md:left-[38%] top-auto  " />
-        <CarouselNext className="right-[44%] max-md:right-[38%] top-auto " />
+        <CarouselPrevious className="left-[0%] " />
+        <CarouselNext className="right-[0%]" />
       </Carousel>
     </section>
   );
