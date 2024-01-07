@@ -15,10 +15,10 @@ export function Header() {
           type="button"
           className="bg-zinc-50 border-zinc-800 border-solid border-2 text-zinc-800 dark:border-none hover:bg-zinc-200"
         >
-          <a href="#">Sobre</a>
+          <a href="#about">Sobre</a>
         </Button>
         <Button type="button">
-          <a href="#">Contato</a>
+          <a href="#contact">Contato</a>
         </Button>
       </div>
     </header>

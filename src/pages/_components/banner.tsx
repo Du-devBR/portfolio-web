@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { technologyIcons } from "./constants/technology-icon-data";
 import banner from "@/assets/banner.png";
+import curriculo from "@/../public/Currículo - Eduardo Ananias da Silva.pdf";
 
 export function Banner() {
   return (
@@ -27,9 +28,13 @@ export function Banner() {
             type="button"
             className="bg-zinc-50 text-zinc-900 border-zinc-900 hover:bg-zinc-200 dark:bg-zinc-800 dark:border-zinc-50 border-solid border-2 dark:text-zinc-50  dark:hover:bg-zinc-900"
           >
-            <a href="#">Veja meus projetos</a>
+            <a href="#projects">Veja meus projetos</a>
           </Button>
-          <Button type="button">Baixar Curriculo</Button>
+          <Button type="button">
+            <a href={curriculo} target="_blank" download={curriculo}>
+              Baixar Curriculo
+            </a>
+          </Button>
         </div>
       </div>
       <div className="flex items-center bg-primary rounded-full overflow-hidden pt-6 max-lg:rounded-3xl max-lg:rotate-0">

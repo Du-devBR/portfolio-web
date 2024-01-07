@@ -2,7 +2,7 @@ import { contactIconData } from "./constants/contact-icon-data";
 
 export function About() {
   return (
-    <section className="flex flex-col mt-40 max-md:mt-24">
+    <section id="about" className="flex flex-col mt-40 max-md:mt-24">
       <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0 max-sm:text-2xl">
         Sobre
       </h2>
