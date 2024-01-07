@@ -2,9 +2,14 @@
 import { FaCss3, FaGithub, FaHtml5, FaNodeJs, FaReact } from "react-icons/fa";
 import dailydiet from "@/assets/dailydiet.jpg";
 import myFreela from "@/assets/myFreela.jpg";
+import coffeDelivery from "@/assets/coofeDelivery.jpg";
+import gitCard from "@/assets/gitCard.jpg";
+import bikcraft from "@/assets/bikcraft.jpg";
 import {
   SiJavascript,
   SiPostgresql,
+  SiSass,
+  SiStyledcomponents,
   SiTailwindcss,
   SiTypescript,
   SiVercel,
@@ -48,25 +53,32 @@ export const projectData: ProjectsDataTypes[] = [
 
   {
     id: "3",
-    cover_image: dailydiet,
-    name: "Daily diet Web",
+    cover_image: coffeDelivery,
+    name: "Coffe Delivery",
     lenguages: [
       <FaReact />,
-      <SiTailwindcss />,
       <SiTypescript />,
-      <FaNodeJs />,
-      <SiPostgresql />,
+      <SiStyledcomponents />,
       <SiVercel />,
     ],
-    github_repo: "https://github.com/Du-devBR/daily-diet-web",
-    homepage: "https://daily-diet-web.vercel.app/",
+    github_repo:
+      "https://github.com/Du-devBR/rocketseatDesafio-Coffee-delivery/tree/master/coffeeDelivery",
+    homepage: "https://rocketseat-coffee-delivery.vercel.app/",
   },
   {
     id: "4",
-    cover_image: myFreela,
+    cover_image: gitCard,
     name: "Meu Freela",
+    lenguages: [<FaReact />, <SiSass />, <FaGithub />],
+    github_repo: "https://github.com/Du-devBR/github-card",
+    homepage: "https://du-devbr.github.io/github-card/",
+  },
+  {
+    id: "5",
+    cover_image: bikcraft,
+    name: "BikCraft",
     lenguages: [<FaHtml5 />, <FaCss3 />, <SiJavascript />, <FaGithub />],
-    github_repo: "https://github.com/Du-devBR/dev-hall-front-end-1",
-    homepage: "https://du-devbr.github.io/dev-hall-front-end-1/",
+    github_repo: "https://github.com/Du-devBR/projetoOrigamid",
+    homepage: "https://du-devbr.github.io/projetoOrigamid/index.html",
   },
 ];
