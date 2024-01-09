@@ -1,7 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { technologyIcons } from "./constants/technology-icon-data";
 import banner from "@/assets/banner.png";
-import curriculo from "@/../public/Currículo - Eduardo Ananias da Silva.pdf";
+import curriculo from "@/assets/Currículo - Eduardo Ananias da Silva.pdf";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@radix-ui/react-dropdown-menu";
 
 export function Banner() {
   return (
@@ -30,11 +37,27 @@ export function Banner() {
           >
             <a href="#projects">Veja meus projetos</a>
           </Button>
-          <Button type="button">
-            <a href={curriculo} target="_blank" download={curriculo}>
-              Baixar Curriculo
-            </a>
-          </Button>
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button>Meu curriculo</Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent className="flex flex-col w-[124px] gap-2 ">
+              <DropdownMenuSeparator />
+              <DropdownMenuItem className="hover:text-primary duration-500">
+                <a href={curriculo} target="_blank">
+                  Visualizar
+                </a>
+              </DropdownMenuItem>
+              <DropdownMenuItem className="hover:text-primary duration-500">
+                <a href={curriculo} target="_blank" download={curriculo}>
+                  Baixar
+                </a>
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
+          {/* <Button type="button">
+
+          </Button> */}
         </div>
       </div>
       <div className="flex items-center bg-primary rounded-full overflow-hidden pt-6 max-lg:rounded-3xl max-lg:rotate-0">
