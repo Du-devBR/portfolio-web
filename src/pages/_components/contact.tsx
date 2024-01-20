@@ -11,9 +11,8 @@ export function Contact() {
         Contato
       </h2>
       <cite className="leading-7 [&:not(:first-child)]:mt-6 text-center">
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab,
-        blanditiis! Quis nesciunt praesentium ea neque est, itaque esse
-        cupiditate ipsum".
+        "Fique à vontade para entrar em contato por meio dos canais abaixo.
+        Ficarei feliz em ajudar."
       </cite>
       <div className="grid grid-cols-2 mt-6 gap-6 max-md:grid-cols-1">
         {contactIconData.map((item, index) => (

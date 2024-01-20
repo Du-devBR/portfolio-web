@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 export function Header() {
   return (
     <header className="flex justify-between items-center">
-      <img src={logo} alt="" />
+      <img src={logo} alt="" loading="lazy" />
       <div className="flex gap-4">
         <div>
           <ThemeToggle />

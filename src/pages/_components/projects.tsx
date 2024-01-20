@@ -15,8 +15,7 @@ export function Projects() {
         Projetos
       </h2>
       <p className="leading-7 [&:not(:first-child)]:mt-6">
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry.
+        Abaixo, você pode encontrar alguns projetos desenvolvidos por mim.
       </p>
       <Carousel
         className="w-full "
