@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { technologyIcons } from "./constants/technology-icon-data";
-import banner from "@/assets/banner.png";
+import banner from "@/assets/banner.webp";
 import curriculo from "@/assets/Currículo - Eduardo Ananias da Silva.pdf";
 import {
   DropdownMenu,
@@ -9,6 +9,8 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@radix-ui/react-dropdown-menu";
+
+import { motion } from "framer-motion";
 
 export function Banner() {
   return (
@@ -55,19 +57,21 @@ export function Banner() {
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
-          {/* <Button type="button">
-
-          </Button> */}
         </div>
       </div>
-      <div className="flex items-center bg-primary rounded-full overflow-hidden pt-6 max-lg:rounded-3xl max-lg:rotate-0">
+      <motion.div
+        className="flex items-center bg-primary md:w-full overflow-hidden pt-6 px-6 rounded-3xl max-lg:rotate-0"
+        initial={{ opacity: 0, scale: 0.5 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5 }}
+      >
         <img
-          className="object-contain transform -rotate-45 max-lg:-rotate-0 max-lg:max-w-64"
+          className="object-contain transform max-h-[585px] max-sm:h-[400px] "
           src={banner}
           alt=""
           loading="lazy"
         />
-      </div>
+      </motion.div>
     </main>
   );
 }
