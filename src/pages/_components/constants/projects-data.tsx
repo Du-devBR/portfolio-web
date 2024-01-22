@@ -1,12 +1,22 @@
 // import { randomUUID } from "node:crypto";
-import { FaCss3, FaGithub, FaHtml5, FaNodeJs, FaReact } from "react-icons/fa";
+import {
+  FaCss3,
+  FaGithub,
+  FaHtml5,
+  FaNodeJs,
+  FaReact,
+  FaStripe,
+} from "react-icons/fa";
 import dailydiet from "@/assets/dailydiet.jpg";
 import myFreela from "@/assets/myFreela.jpg";
 import coffeDelivery from "@/assets/coofeDelivery.jpg";
 import gitCard from "@/assets/gitCard.jpg";
 import bikcraft from "@/assets/bikcraft.jpg";
+import igniteShop from "@/assets/igniteShop.jpg";
+
 import {
   SiJavascript,
+  SiNextdotjs,
   SiPostgresql,
   SiSass,
   SiStyledcomponents,
@@ -42,6 +52,20 @@ export const projectData: ProjectsDataTypes[] = [
   },
   {
     id: "2",
+    cover_image: igniteShop,
+    name: "Ignite Shop",
+    lenguages: [
+      <SiNextdotjs />,
+      <SiStyledcomponents />,
+      <SiTypescript />,
+      <FaStripe />,
+      <SiVercel />,
+    ],
+    github_repo: "https://github.com/Du-devBR/rocketDesafioIgniteShop",
+    homepage: "https://desafio-ignite-shop.vercel.app/",
+  },
+  {
+    id: "3",
     cover_image: myFreela,
     name: "Meu Freela",
     lenguages: [<FaHtml5 />, <FaCss3 />, <SiJavascript />, <FaGithub />],
@@ -49,10 +73,8 @@ export const projectData: ProjectsDataTypes[] = [
     homepage: "https://du-devbr.github.io/dev-hall-front-end-1/",
   },
 
-  // alterar abaixo
-
   {
-    id: "3",
+    id: "4",
     cover_image: coffeDelivery,
     name: "Coffe Delivery",
     lenguages: [
@@ -66,7 +88,7 @@ export const projectData: ProjectsDataTypes[] = [
     homepage: "https://rocketseat-coffee-delivery.vercel.app/",
   },
   {
-    id: "4",
+    id: "5",
     cover_image: gitCard,
     name: "Meu Freela",
     lenguages: [<FaReact />, <SiSass />, <FaGithub />],
@@ -74,7 +96,7 @@ export const projectData: ProjectsDataTypes[] = [
     homepage: "https://du-devbr.github.io/github-card/",
   },
   {
-    id: "5",
+    id: "6",
     cover_image: bikcraft,
     name: "BikCraft",
     lenguages: [<FaHtml5 />, <FaCss3 />, <SiJavascript />, <FaGithub />],
