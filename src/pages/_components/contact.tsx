@@ -5,6 +5,7 @@ import { useCopyToClipboard } from "@/hooks/use-copy-to-clipboard";
 export function Contact() {
   const { copyLinkContact, handleCopyLinkContact, setCopyLinkContact } =
     useCopyToClipboard();
+
   return (
     <section id="contact" className="flex flex-col mt-40 max-md:mt-24">
       <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
@@ -18,12 +19,7 @@ export function Contact() {
         {contactIconData.map((item, index) => (
           <div key={index} className="flex items-center gap-2">
             <div className="p-2 bg-primary rounded-full">{item.icon}</div>
-            <a
-              href={item.href}
-              target="_blanck"
-              id="linkContact"
-              className="text-sm"
-            >
+            <a href={item.href} target="_blanck" className="text-sm">
               {item.name}
             </a>
             {copyLinkContact === item.id ? (

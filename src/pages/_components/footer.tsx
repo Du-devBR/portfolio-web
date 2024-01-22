@@ -14,18 +14,25 @@ export function Footer() {
         <img src={logo} alt="" className="w-8 " />
         <div className="flex items-center">
           <span className="max-sm:text-sm">{new Date().getFullYear()} - </span>
-          <p className="max-sm:text-sm">
+          <p className="max-sm:text-sm underline font-bold">
             Eduardo Ananias - Design by{" "}
             <a
               href="https://www.linkedin.com/in/eduardo-ananias-29a53048/"
-              className="text-primary "
+              className="text-muted-foreground "
             >
               Eduardo Ananias
             </a>
           </p>
         </div>
-        <button className=" absolute top-[-48px] right-8" onClick={scrollTo}>
-          <ArrowUp className="text-primary w-8 h-8 animate-pulse" />
+        <button
+          aria-label="ir ao topo"
+          className=" absolute top-[-48px] right-8"
+          onClick={scrollTo}
+        >
+          <ArrowUp
+            aria-hidden="true"
+            className="text-primary w-8 h-8 animate-pulse"
+          />
         </button>
       </div>
     </footer>

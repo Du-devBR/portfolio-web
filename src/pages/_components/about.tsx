@@ -23,6 +23,7 @@ export function About() {
               <li key={index} className="hover:scale-105 hover:text-primary">
                 <a
                   target="_blanck"
+                  aria-label={item.label}
                   href={item.href}
                   className="shadow-2xl shadow-primary duration-500"
                 >

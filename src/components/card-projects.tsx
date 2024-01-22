@@ -17,7 +17,7 @@ export function CardProjects({ data }: CardProjectsProps) {
         src={data.cover_image}
         alt=""
       />
-      <h4 className="text-lg">{data.name}</h4>
+      <h3 className="text-lg">{data.name}</h3>
       <div className="flex gap-2">
         {data.lenguages.map((lenguage, index) => (
           <div key={index}>{lenguage}</div>
