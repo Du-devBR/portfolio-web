@@ -11,8 +11,8 @@ export function Contact() {
         Contato
       </h2>
       <cite className="leading-7 [&:not(:first-child)]:mt-6 text-center">
-        "Fique à vontade para entrar em contato por meio dos canais abaixo.
-        Ficarei feliz em ajudar."
+        "Fique à vontade para entrar em contato comigo através dos canais de
+        atendimento que estão abaixo. Ficarei feliz em te ajudar."
       </cite>
       <div className="grid grid-cols-2 mt-6 gap-6 max-md:grid-cols-1">
         {contactIconData.map((item, index) => (

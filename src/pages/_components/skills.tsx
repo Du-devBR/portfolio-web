@@ -11,8 +11,7 @@ export function Skills() {
       <p className="leading-7 [&:not(:first-child)]:mt-6">
         Busco constantemente aprimorar minhas habilidades em programação,
         participando de formações especializadas para enfrentar os desafios
-        diários. Contribuir de maneira eficaz para projetos inovadores é uma das
-        minhas principais habilidades.
+        diários. Contribuindo de maneira eficaz em projetos inovadores.
       </p>
       <GridContainerColumns>
         {technologyIcons.map((item, index) => (
