@@ -107,7 +107,7 @@ export const projectData: ProjectsDataTypes[] = [
   {
     id: "7",
     cover_image: lacrei,
-    name: "Lacrei Saude infos",
+    name: "Lacrei Saude - infos",
     lenguages: [
       <SiNextdotjs />,
       <SiTypescript />,
