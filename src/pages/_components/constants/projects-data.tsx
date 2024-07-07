@@ -13,6 +13,7 @@ import coffeDelivery from "@/assets/coofeDelivery.jpg";
 import gitCard from "@/assets/gitCard.jpg";
 import bikcraft from "@/assets/bikcraft.jpg";
 import igniteShop from "@/assets/igniteShop.jpg";
+import lacrei from "@/assets/lacrei.png";
 
 import {
   SiJavascript,
@@ -102,5 +103,19 @@ export const projectData: ProjectsDataTypes[] = [
     lenguages: [<FaHtml5 />, <FaCss3 />, <SiJavascript />, <FaGithub />],
     github_repo: "https://github.com/Du-devBR/projetoOrigamid",
     homepage: "https://du-devbr.github.io/projetoOrigamid/index.html",
+  },
+  export const projectData: ProjectsDataTypes[] = [
+  {
+    id: "7",
+    cover_image: lacrei,
+    name: "Lacrei Saude infos",
+    lenguages: [
+      <SiNextdotjs />,
+      <SiTypescript />,
+      <SiStyledcomponents />,
+      <SiVercel />,
+    ],
+    github_repo: "https://github.com/Du-devBR/frontend-lacrei-saude",
+    homepage: "https://frontend-lacrei-saude.vercel.app/",
   },
 ];
