@@ -104,7 +104,6 @@ export const projectData: ProjectsDataTypes[] = [
     github_repo: "https://github.com/Du-devBR/projetoOrigamid",
     homepage: "https://du-devbr.github.io/projetoOrigamid/index.html",
   },
-  export const projectData: ProjectsDataTypes[] = [
   {
     id: "7",
     cover_image: lacrei,
